@@ -7,7 +7,6 @@ const Specialties = () => {
       <SpecialtyItem />
       <SpecialtyItem />
       <SpecialtyItem />
-      <SpecialtyItem />
     </div>
   );
 };

@@ -18,12 +18,20 @@ const ContactInfo = () => {
       </div>
 
       <div className="flex flex-col xl:flex-row xl:justify-between w-4/5">
-        <a
+        {/* <a
           className="font-bold text-xs sm:text-md xl:text-lg"
           href="https://www.facebook.com/Abdullah.5131?mibextid=ZbWKwL"
           target="blank"
         >
           FACEBOOK
+        </a> */}
+
+        <a
+          className="font-bold text-xs sm:text-md xl:text-lg"
+          href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
+          target="blank"
+        >
+          INSTAGRAM
         </a>
         <a
           className="font-bold text-xs sm:text-md xl:text-lg"
@@ -31,13 +39,6 @@ const ContactInfo = () => {
           target="blank"
         >
           TWITTER
-        </a>
-        <a
-          className="font-bold text-xs sm:text-md xl:text-lg"
-          href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
-          target="blank"
-        >
-          INSTAGRAM
         </a>
         <a
           className="font-bold text-xs sm:text-md xl:text-lg"

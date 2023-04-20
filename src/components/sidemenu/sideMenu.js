@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -20,7 +21,9 @@ const SideMenu = () => {
     <div className="bg-darkGray text-white h-full p-9 flex flex-col justify-between">
       <div>
         {/* <img src={Logo} alt="Logo" /> */}
-        <h1 className="font-boldItalic text-xl">{logo}</h1>
+        <Link to="/" className="font-boldItalic text-xl">
+          {logo}
+        </Link>
       </div>
 
       <NavOptions />

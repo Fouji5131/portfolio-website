@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_w5tajt9",
+        "template_pch53wn",
+        form.current,
+        "fmMTtOR69E1VJ47WF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("email send");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="w-full h-full my-10 p-10 xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="w-full h-full my-10 p-10 xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white"
+    >
       <div>
         <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl">
           ANY PROJECTS?
@@ -17,6 +45,7 @@ const ContactForm = () => {
 
           <input
             id="name"
+            name="from_name"
             className=" xl:w-56 xl:pl-5 focus:outline-none bg-transparent text-white placeholder-white"
             type="text"
             // placeholder="enter your name"
@@ -29,6 +58,7 @@ const ContactForm = () => {
           </label>
           <input
             id="email"
+            name="from_email"
             className="xl:w-56 xl:pl-5 focus:outline-none bg-transparent text-white placeholder-white"
             type="email"
             // placeholder="enter your email"
@@ -42,6 +72,7 @@ const ContactForm = () => {
         </label>
         <input
           id="message"
+          name="message"
           className="w-full xl:pt-1 focus:outline-none bg-transparent text-white placeholder-white"
           type="text"
           //   placeholder="enter your message"
@@ -52,10 +83,14 @@ const ContactForm = () => {
         <p>ATTACH FILE</p>
       </div>
 
-      <div className="xl:w-1/3 flex justify-center py-3 bg-darkGray">
+      <button
+        type="submit"
+        className="xl:w-1/3 flex justify-center py-3 bg-darkGray"
+      >
         <p>Submit Now</p>
-      </div>
-    </div>
+        {/* <input type="submit" value="Send" /> */}
+      </button>
+    </form>
   );
 };
 
