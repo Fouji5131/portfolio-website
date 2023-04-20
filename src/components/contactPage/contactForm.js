@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import FileAttach from "../../images/attach-file.png";
 
 const ContactForm = () => {
   const form = useRef();
@@ -29,7 +30,7 @@ const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="w-full h-full my-10 p-10 xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white"
+      className="w-full  my-10 p-10 xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white"
     >
       <div>
         <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl">
@@ -79,8 +80,18 @@ const ContactForm = () => {
         />
       </div>
 
-      <div className=" text-sm sm:text-sm xl:text-lg w-1/2 xl:w-1/4 text-center">
-        <p className="bg-white rounded-2xl bg-opacity-20 ">Upload File</p>
+      <div
+        // type="file"
+        // id="myFile"
+        // name="filename"
+        className="flex flex-row justify-center items-center space-x-2 text-sm sm:text-sm xl:text-lg w-1/2 xl:w-1/4 bg-white rounded-2xl bg-opacity-20 "
+      >
+        <img className="w-4 h-4" src={FileAttach} alt="" />
+        {/* <p c>Upload File</p> */}
+        <label className="hover:cursor-pointer" for="myFile">
+          Upload File
+        </label>
+        <input type="file" id="myFile" hidden />
       </div>
 
       <button

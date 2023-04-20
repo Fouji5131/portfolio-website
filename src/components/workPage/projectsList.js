@@ -10,12 +10,6 @@ const ProjectsList = () => {
       <div className="xl:w-4/5 ">
         <ProjectItem />
       </div>
-      <div className="xl:w-4/5 ">
-        <ProjectItem />
-      </div>
-      <div className="xl:w-4/5 ">
-        <ProjectItem />
-      </div>
     </div>
   );
 };

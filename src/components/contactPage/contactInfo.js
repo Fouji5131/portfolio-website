@@ -1,4 +1,7 @@
 import React from "react";
+import Instagram from "../../images/instagram.png";
+import Twitter from "../../images/twitter.png";
+import LinkedIn from "../../images/linkedin.png";
 
 const ContactInfo = () => {
   return (
@@ -15,7 +18,28 @@ const ContactInfo = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-between w-2/3">
+      <div className="flex flex-row justify-between w-1/3">
+        <a
+          className="w-3/12 font-bold text-xs sm:text-md xl:text-lg"
+          href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
+          target="blank"
+        >
+          <img className="object-contain" src={Instagram} alt="" />
+        </a>
+        <a
+          className="w-3/12 font-bold text-xs sm:text-md xl:text-lg"
+          href="https://twitter.com/mabdullah_5131?t=-hcWoZv201l1ypsWaThG0w&s=09"
+          target="blank"
+        >
+          <img className="" src={Twitter} alt="" />
+        </a>
+        <a
+          className="w-3/12 font-bold text-xs sm:text-md xl:text-lg"
+          href="https://www.linkedin.com/in/muhammad-abdullah-4489a2202"
+          target="blank"
+        >
+          <img className=" " src={LinkedIn} alt="" />
+        </a>
         {/* <a
           className="font-bold text-xs sm:text-md xl:text-lg"
           href="https://www.facebook.com/Abdullah.5131?mibextid=ZbWKwL"
@@ -24,7 +48,7 @@ const ContactInfo = () => {
           FACEBOOK
         </a> */}
 
-        <a
+        {/* <a
           className="font-bold text-xs sm:text-md xl:text-lg"
           href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
           target="blank"
@@ -44,7 +68,7 @@ const ContactInfo = () => {
           target="blank"
         >
           LINKEDIN
-        </a>
+        </a> */}
 
         {/* <div className="flex flex-row w-1/2">
           <p className="font-bold text-sm sm:text-md xl:text-lg">FACEBOOK</p>
