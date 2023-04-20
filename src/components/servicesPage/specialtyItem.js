@@ -37,9 +37,12 @@ const SpecialtyItem = () => {
           </div>
         </div>
 
-        <div>
-          <button className="xl:w-1/12 flex align-top" onClick={openImgHandler}>
-            <h1 className="p-3 font-light text-3xl sm:text-4xl xl:text-5xl text-center rounded-xl shadow-xl">
+        <div className="w-16">
+          <button
+            className="w-full flex align-top justify-center text-center rounded-xl shadow-xl"
+            onClick={openImgHandler}
+          >
+            <h1 className="p-3 font-light text-3xl sm:text-4xl xl:text-5xl">
               {addImg}
             </h1>
           </button>

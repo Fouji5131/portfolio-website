@@ -3,21 +3,19 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <div className="w-full space-y-8 xl:space-y-16">
-      <p>
-        249 king Sir, 05th Floor, Ultra House Building, Melboune, VIC 3000,
-        London.
-      </p>
-
-      <div className="space-y-1 xl:space-y-2">
-        <h1 className="font-bold text-xl sm:text-xl xl:text-3xl">
-          +923214131187
-        </h1>
-        <h1 className="font-bold text-xl sm:text-xl xl:text-3xl">
-          mabdullahr5131@gmail.com
-        </h1>
+      <div className="space-y-5 xl:space-y-5">
+        <p>Green Town, Lahore, Pakistan.</p>
+        <div>
+          <h1 className="font-bold text-md sm:text-xl xl:text-2xl">
+            +923214131187
+          </h1>
+          <h1 className="font-bold text-md sm:text-xl xl:text-2xl">
+            mabdullahr5131@gmail.com
+          </h1>
+        </div>
       </div>
 
-      <div className="flex flex-col xl:flex-row xl:justify-between w-4/5">
+      <div className="flex flex-row justify-between w-2/3">
         {/* <a
           className="font-bold text-xs sm:text-md xl:text-lg"
           href="https://www.facebook.com/Abdullah.5131?mibextid=ZbWKwL"

@@ -79,15 +79,15 @@ const ContactForm = () => {
         />
       </div>
 
-      <div className=" text-sm sm:text-sm xl:text-lg">
-        <p>ATTACH FILE</p>
+      <div className=" text-sm sm:text-sm xl:text-lg w-1/2 xl:w-1/4 text-center">
+        <p className="bg-white rounded-2xl bg-opacity-20 ">Upload File</p>
       </div>
 
       <button
         type="submit"
-        className="xl:w-1/3 flex justify-center py-3 bg-darkGray"
+        className="w-full xl:w-1/3 flex justify-center py-3 bg-darkGray"
       >
-        <p>Submit Now</p>
+        Submit Now
         {/* <input type="submit" value="Send" /> */}
       </button>
     </form>
