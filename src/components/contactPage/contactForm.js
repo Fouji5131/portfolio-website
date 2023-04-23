@@ -91,7 +91,7 @@ const ContactForm = () => {
         <label className="hover:cursor-pointer" for="myFile">
           Upload File
         </label>
-        <input type="file" id="myFile" hidden />
+        <input type="file" id="myFile" name="attach_file" hidden />
       </div>
 
       <button

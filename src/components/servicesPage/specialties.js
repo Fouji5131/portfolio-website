@@ -1,12 +1,11 @@
 import React from "react";
 import SpecialtyItem from "./specialtyItem";
+import ServicesData from "./servicesData";
 
 const Specialties = () => {
   return (
     <div className="space-y-10">
-      <SpecialtyItem />
-      <SpecialtyItem />
-      <SpecialtyItem />
+      <SpecialtyItem servicesData={ServicesData} />
     </div>
   );
 };
