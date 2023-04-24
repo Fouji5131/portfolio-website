@@ -1,9 +1,25 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import FileAttach from "../../images/attach-file.png";
 
 const ContactForm = () => {
   const form = useRef();
+
+  const [file, setFile] = useState(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,6 +40,7 @@ const ContactForm = () => {
           console.log(error.text);
         }
       );
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -46,9 +63,11 @@ const ContactForm = () => {
 
           <input
             id="name"
-            name="from_name"
+            name="name"
             className=" xl:w-56 xl:pl-5 focus:outline-none bg-transparent text-white placeholder-white"
             type="text"
+            value={formData.name}
+            onChange={handleChange}
             // placeholder="enter your name"
           />
         </div>
@@ -59,9 +78,11 @@ const ContactForm = () => {
           </label>
           <input
             id="email"
-            name="from_email"
+            name="email"
             className="xl:w-56 xl:pl-5 focus:outline-none bg-transparent text-white placeholder-white"
             type="email"
+            value={formData.email}
+            onChange={handleChange}
             // placeholder="enter your email"
           />
         </div>
@@ -76,6 +97,8 @@ const ContactForm = () => {
           name="message"
           className="w-full xl:pt-1 focus:outline-none bg-transparent text-white placeholder-white"
           type="text"
+          value={formData.message}
+          onChange={handleChange}
           //   placeholder="enter your message"
         />
       </div>
@@ -92,7 +115,13 @@ const ContactForm = () => {
           <label className="hover:cursor-pointer" for="myFile">
             Upload File
           </label>
-          <input type="file" id="myFile" name="attach_file" hidden />
+          <input
+            type="file"
+            id="myFile"
+            name="file"
+            onChange={handleFileChange}
+            hidden
+          />
         </div>
 
         <button

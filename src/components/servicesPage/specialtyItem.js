@@ -16,9 +16,9 @@ const SpecialtyItem = (props) => {
   };
 
   return (
-    <div className="space-y-10 rounded-3xl shadow-2xl ">
+    <div className="space-y-10 ">
       {props.servicesData.map((services) => (
-        <div className="space-y-5 px-10 py-5  ">
+        <div className="space-y-5 px-10 py-5 rounded-3xl shadow-lg  ">
           <div className="flex flex-row">
             <div className="flex flex-row w-full items-center font-regular">
               <div className="flex flex-col xl:flex-row xl:w-11/12">
@@ -53,7 +53,7 @@ const SpecialtyItem = (props) => {
             </div>
           </div>
 
-          <hr className="w-full flex justify-center border" />
+          {/* <hr className="w-full flex justify-center border" /> */}
         </div>
       ))}
     </div>

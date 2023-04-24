@@ -1,5 +1,6 @@
 import React from "react";
 import WelcomeDp from "../../images/welcomeDp.png";
+import CV from "../../assets/cv/resume.pdf";
 
 const Welcome = () => {
   return (
@@ -22,7 +23,7 @@ const Welcome = () => {
           Software <span className="font-boldItalic">Developer</span>
         </h6>
         <p className="font-bold underline text-sm 2xl:text-lg zoomUp">
-          <a href="../../assets/resume.pdf" download="CV.pdf">
+          <a href={CV} download="CV.pdf">
             Download CV
           </a>
         </p>

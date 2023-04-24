@@ -11,16 +11,16 @@ const ProjectsData = [
     projectName: "Website Research",
     image: ProjectImage,
   },
-  {
-    title: "Graphic Design",
-    projectName: "Logo ",
-    image: ProjectImage,
-  },
-  {
-    title: "Graphic Design",
-    projectName: "Logo ",
-    image: ProjectImage,
-  },
+  // {
+  //   title: "Graphic Design",
+  //   projectName: "Logo ",
+  //   image: ProjectImage,
+  // },
+  // {
+  //   title: "Graphic Design",
+  //   projectName: "Logo ",
+  //   image: ProjectImage,
+  // },
 ];
 
 export default ProjectsData;

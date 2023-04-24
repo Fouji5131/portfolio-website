@@ -1,4 +1,5 @@
 import React from "react";
+import CV from "../../assets/cv/resume.pdf";
 
 const Experience = () => {
   return (
@@ -15,7 +16,7 @@ const Experience = () => {
               developer, and I'm very passionate and dedicated to my work.
             </p>
             <div className="w-4/5 2xl:w-3/4 py-3  bg-darkGray text-white text-center font-regular rounded-3xl shadow-2xl zoomUp">
-              <a href="../../assets/resume.pdf" download>
+              <a href={CV} download="CV.pdf">
                 Download my resume
               </a>
             </div>
