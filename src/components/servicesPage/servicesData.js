@@ -9,11 +9,6 @@ const ServicesData = [
     image: SpecialtyImg,
   },
   {
-    title: "GRAPHIC DESIGN",
-    description: `You can customize a template or make your own from scratch`,
-    image: SpecialtyImg,
-  },
-  {
     title: "WEB DESIGN",
     description: `With an immersive library at your disposal. You can customize
     a template`,

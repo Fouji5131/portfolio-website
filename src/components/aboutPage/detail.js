@@ -51,7 +51,7 @@ const Detail = () => {
         </div>
       </div>
 
-      <div className="flex flex-row p-4 bg-darkGray rounded-3xl shadow-2xl">
+      <div className="flex flex-row p-4 bg-darkGray rounded-3xl shadow-2xl hover:scale-110">
         <img className="object-contain" src={Quotes} alt="" />
         <h1 className="font-italic text-sm sm:text-sm 2xl:text-lg text-white ">
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed

@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="flex justify-center w-full xl:w-3/4 mb-10 xl:mb-0 bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl">
+    <div className="flex justify-center w-full xl:w-3/4 mb-10 xl:mb-0 bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl hover:scale-110">
       <div className="flex flex-col xl:flex-row justify-center w-full 2xl:w-4/5 p-10 xl:p-20 2xl:px-0 2xl:py-28 space-y-5">
         <div className="flex flex-col w-full xl:w-1/2 ">
           <div className="flex flex-col items-center xl:items-start xl:w-3/5 space-y-5 xl:space-y-10 text-sm sm:text-sm 2xl:text-lg">

@@ -30,7 +30,7 @@ const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="w-full  my-10 p-10 2xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl"
+      className="w-full  my-10 p-10 2xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl hover:scale-110"
     >
       <div>
         <h1 className="font-bold text-2xl sm:text-3xl 2xl:text-4xl">

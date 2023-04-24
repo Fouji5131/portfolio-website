@@ -34,7 +34,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center w-full p-10 2xl:p-20 space-y-10 rounded-3xl shadow-2xl bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white">
+    <div className="flex flex-col justify-center w-full p-10 2xl:p-20 space-y-10 rounded-3xl shadow-2xl hover:scale-110 bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white">
       <div className="text-center space-y-3 xl:space-y-5">
         <p className="font-italic text-sm sm:text-md 2xl:text-lg">
           Testimonial
