@@ -12,7 +12,7 @@ const Info = () => {
           <span className="font-regular">Software </span>
           Developer
         </p>
-        <div className="xl:w-2/4 2xl:w-1/3 w-1/2 py-3  bg-darkGray text-white text-center font-regular rounded-3xl shadow-2xl hover:scale-110">
+        <div className="xl:w-2/4 2xl:w-1/3 w-1/2 py-3  bg-darkGray text-white text-center font-regular rounded-3xl shadow-2xl zoomUp">
           <Link to="/contact">Let's talk with me</Link>
         </div>
         <div className="flex flex-col sm:flex-row font-boldItalic sm:space-x-20 xl:space-x-20">

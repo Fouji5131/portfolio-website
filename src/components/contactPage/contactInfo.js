@@ -20,21 +20,21 @@ const ContactInfo = () => {
 
       <div className="flex flex-row justify-between w-2/5">
         <a
-          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg"
+          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg zoomUp"
           href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
           target="blank"
         >
           <img className="object-contain" src={Instagram} alt="" />
         </a>
         <a
-          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg"
+          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg zoomUp"
           href="https://twitter.com/mabdullah_5131?t=-hcWoZv201l1ypsWaThG0w&s=09"
           target="blank"
         >
           <img className="" src={Twitter} alt="" />
         </a>
         <a
-          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg"
+          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg zoomUp"
           href="https://www.linkedin.com/in/muhammad-abdullah-4489a2202"
           target="blank"
         >

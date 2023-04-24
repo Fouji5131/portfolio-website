@@ -9,7 +9,7 @@ const SocialImgs = () => {
   return (
     <div className="flex flex-row space-x-6 ">
       <a
-        className="font-bold text-xs sm:text-md xl:text-lg"
+        className="font-bold text-xs sm:text-md xl:text-lg zoomUp"
         href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
         target="blank"
       >
@@ -23,14 +23,14 @@ const SocialImgs = () => {
         <img className=" " src={Facebook} alt="" />
       </a> */}
       <a
-        className="font-bold text-xs sm:text-md xl:text-lg"
+        className="font-bold text-xs sm:text-md xl:text-lg zoomUp"
         href="https://twitter.com/mabdullah_5131?t=-hcWoZv201l1ypsWaThG0w&s=09"
         target="blank"
       >
         <img className=" " src={Twitter} alt="" />
       </a>
       <a
-        className="font-bold text-xs sm:text-md xl:text-lg"
+        className="font-bold text-xs sm:text-md xl:text-lg zoomUp"
         href="https://www.linkedin.com/in/muhammad-abdullah-4489a2202"
         target="blank"
       >

@@ -60,3 +60,15 @@ code {
 .bg-gradient {
   @apply bg-gradient-to-r;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.zoomUp {
+  transition: transform 0.1s ease-in-out;
+}
+
+.zoomUp:hover {
+  transform: scale(1.2);
+}

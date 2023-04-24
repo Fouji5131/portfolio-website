@@ -34,7 +34,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center w-full p-10 2xl:p-20 space-y-10 rounded-3xl shadow-2xl hover:scale-110 bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white">
+    <div className="flex flex-col justify-center w-full p-10 2xl:p-20 space-y-10 rounded-3xl shadow-2xl  bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white">
       <div className="text-center space-y-3 xl:space-y-5">
         <p className="font-italic text-sm sm:text-md 2xl:text-lg">
           Testimonial
@@ -70,13 +70,13 @@ const Testimonial = () => {
 
           <div className="flex flex-row justify-center xl:justify-start space-x-5">
             <img
-              className="rounded-3xl shadow-2xl"
+              className="rounded-3xl shadow-2xl zoomUp"
               src={LeftClick}
               alt=""
               onClick={prevClick}
             />
             <img
-              lassName="rounded-3xl shadow-2xl"
+              className="rounded-3xl shadow-2xl zoomUp"
               src={RightClick}
               alt=""
               onClick={nextClick}
@@ -85,10 +85,10 @@ const Testimonial = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 xl:grid-cols-4 gap-10 ">
-        <img className="object-contain" src={CompanyLogo1} alt="" />
-        <img className="object-contain" src={CompanyLogo2} alt="" />
-        <img className="object-contain" src={CompanyLogo3} alt="" />
-        <img className="object-contain" src={CompanyLogo4} alt="" />
+        <img className="object-contain zoomUp" src={CompanyLogo1} alt="" />
+        <img className="object-contain zoomUp" src={CompanyLogo2} alt="" />
+        <img className="object-contain zoomUp" src={CompanyLogo3} alt="" />
+        <img className="object-contain zoomUp" src={CompanyLogo4} alt="" />
       </div>
     </div>
   );

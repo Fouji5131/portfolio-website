@@ -16,7 +16,7 @@ const SpecialtyItem = (props) => {
   };
 
   return (
-    <div className="space-y-10 rounded-3xl shadow-2xl hover:scale-110">
+    <div className="space-y-10 rounded-3xl shadow-2xl ">
       {props.servicesData.map((services) => (
         <div className="space-y-5 px-10 py-5  ">
           <div className="flex flex-row">
@@ -43,7 +43,7 @@ const SpecialtyItem = (props) => {
 
             <div className="w-16">
               <button
-                className="w-full flex align-top justify-center text-center bg-darkGray text-white rounded-3xl shadow-2xl "
+                className="w-full flex align-top justify-center text-center  bg-darkGray text-white rounded-3xl shadow-2xl zoomUp"
                 onClick={openImgHandler}
               >
                 <h1 className="p-3 font-light text-3xl sm:text-4xl 2xl:text-5xl">

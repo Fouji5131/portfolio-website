@@ -30,7 +30,7 @@ const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="w-full  my-10 p-10 2xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl hover:scale-110"
+      className="w-full  my-10 p-10 2xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl "
     >
       <div>
         <h1 className="font-bold text-2xl sm:text-3xl 2xl:text-4xl">
@@ -85,7 +85,7 @@ const ContactForm = () => {
           // type="file"
           // id="myFile"
           // name="filename"
-          className="flex flex-row justify-center items-center space-x-2 text-sm sm:text-sm 2xl:text-lg px-2 bg-white rounded-2xl bg-opacity-20 "
+          className="flex flex-row justify-center items-center space-x-2 text-sm sm:text-sm 2xl:text-lg px-2 bg-white rounded-2xl bg-opacity-20  zoomUp"
         >
           <img className="w-4 h-4" src={FileAttach} alt="" />
           {/* <p c>Upload File</p> */}
@@ -97,7 +97,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full flex justify-center py-3 bg-darkGray rounded-3xl shadow-2xl"
+          className="w-full flex justify-center py-3 bg-darkGray rounded-3xl shadow-2xl zoomUp"
         >
           Submit Now
           {/* <input type="submit" value="Send" /> */}
