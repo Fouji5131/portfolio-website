@@ -28,10 +28,9 @@ const SideMenu = () => {
 
       <NavOptions />
 
-      <SocialImgs />
-
       <div className="font-light text-sm">
-        <p>Copyright ©2023 Jacob Jones. All right reserved.</p>
+        <SocialImgs />
+        <p className="mt-4">Copyright ©2023 Jacob Jones. All right reserved.</p>
       </div>
       {/* <Toolbar /> */}
       {/* <List>

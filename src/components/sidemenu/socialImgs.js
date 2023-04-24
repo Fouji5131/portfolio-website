@@ -7,7 +7,7 @@ import LinkedIn from "../../images/linkedin.png";
 
 const SocialImgs = () => {
   return (
-    <div className="flex flex-row xl:flex-col space-x-4 xl:space-x-0 xl:space-y-4  xl:w-1/4">
+    <div className="flex flex-row space-x-6 ">
       <a
         className="font-bold text-xs sm:text-md xl:text-lg"
         href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="

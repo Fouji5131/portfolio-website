@@ -30,17 +30,17 @@ const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="w-full  my-10 p-10 xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white"
+      className="w-full  my-10 p-10 2xl:p-20 space-y-5 font-regular bg-gradient from-purpleGrad via-redGrad to-yellowGrad text-white rounded-3xl shadow-2xl"
     >
       <div>
-        <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl">
-          ANY PROJECTS?
+        <h1 className="font-bold text-2xl sm:text-3xl 2xl:text-4xl">
+          ANY PROJECTS ?
         </h1>
       </div>
 
       <div className="flex flex-col xl:flex-row justify-between w-full font-regular space-y-5 xl:space-y-0">
         <div className="flex flex-col xl:flex-row border-b-2 py-1 xl:py-4">
-          <label className=" text-sm sm:text-sm xl:text-lg" for="name">
+          <label className=" text-sm sm:text-sm 2xl:text-lg" for="name">
             NAME
           </label>
 
@@ -54,7 +54,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex flex-col xl:flex-row border-b-2 py-1 xl:py-4">
-          <label className=" text-sm sm:text-sm xl:text-lg" for="email">
+          <label className=" text-sm sm:text-sm 2xl:text-lg" for="email">
             EMAIL
           </label>
           <input
@@ -68,7 +68,7 @@ const ContactForm = () => {
       </div>
 
       <div className=" border-b-2 py-1 xl:py-4">
-        <label className=" text-sm sm:text-sm xl:text-lg" for="message">
+        <label className=" text-sm sm:text-sm 2xl:text-lg" for="message">
           MESSAGE
         </label>
         <input
@@ -80,27 +80,29 @@ const ContactForm = () => {
         />
       </div>
 
-      <div
-        // type="file"
-        // id="myFile"
-        // name="filename"
-        className="flex flex-row justify-center items-center space-x-2 text-sm sm:text-sm xl:text-lg w-1/2 xl:w-1/4 bg-white rounded-2xl bg-opacity-20 "
-      >
-        <img className="w-4 h-4" src={FileAttach} alt="" />
-        {/* <p c>Upload File</p> */}
-        <label className="hover:cursor-pointer" for="myFile">
-          Upload File
-        </label>
-        <input type="file" id="myFile" name="attach_file" hidden />
-      </div>
+      <div className="flex flex-col items-center xl:w-1/3 gap-4">
+        <div
+          // type="file"
+          // id="myFile"
+          // name="filename"
+          className="flex flex-row justify-center items-center space-x-2 text-sm sm:text-sm 2xl:text-lg px-2 bg-white rounded-2xl bg-opacity-20 "
+        >
+          <img className="w-4 h-4" src={FileAttach} alt="" />
+          {/* <p c>Upload File</p> */}
+          <label className="hover:cursor-pointer" for="myFile">
+            Upload File
+          </label>
+          <input type="file" id="myFile" name="attach_file" hidden />
+        </div>
 
-      <button
-        type="submit"
-        className="w-full xl:w-1/3 flex justify-center py-3 bg-darkGray"
-      >
-        Submit Now
-        {/* <input type="submit" value="Send" /> */}
-      </button>
+        <button
+          type="submit"
+          className="w-full flex justify-center py-3 bg-darkGray rounded-3xl shadow-2xl"
+        >
+          Submit Now
+          {/* <input type="submit" value="Send" /> */}
+        </button>
+      </div>
     </form>
   );
 };

@@ -22,7 +22,7 @@ const SpecialtyItem = (props) => {
           <div className="flex flex-row">
             <div className="flex flex-row w-full items-center font-regular">
               <div className="flex flex-col xl:flex-row xl:w-11/12">
-                <div className="xl:w-1/2 font-bold text-1xl sm:text-2xl xl:text-3xl">
+                <div className="xl:w-1/2 font-bold text-1xl sm:text-2xl 2xl:text-3xl">
                   <ul style={{ listStyleType: "disc" }}>
                     <li>{services.title}</li>
                   </ul>
@@ -30,7 +30,13 @@ const SpecialtyItem = (props) => {
 
                 <div className="xl:w-1/2 pr-5 space-y-5">
                   <p>{services.description}</p>
-                  {openImg && <img src={services.image} alt="" />}
+                  {openImg && (
+                    <img
+                      className="rounded-3xl shadow-2xl"
+                      src={services.image}
+                      alt=""
+                    />
+                  )}
                 </div>
               </div>
             </div>
@@ -40,7 +46,7 @@ const SpecialtyItem = (props) => {
                 className="w-full flex align-top justify-center text-center rounded-xl shadow-xl"
                 onClick={openImgHandler}
               >
-                <h1 className="p-3 font-light text-3xl sm:text-4xl xl:text-5xl">
+                <h1 className="p-3 font-light text-3xl sm:text-4xl 2xl:text-5xl">
                   {addImg}
                 </h1>
               </button>

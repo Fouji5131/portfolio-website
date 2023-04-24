@@ -5,36 +5,36 @@ import LinkedIn from "../../images/linkedin.png";
 
 const ContactInfo = () => {
   return (
-    <div className="w-full space-y-8 xl:space-y-16">
-      <div className="space-y-5 xl:space-y-5">
+    <div className="w-full space-y-8 2xl:space-y-16">
+      <div className="space-y-5 2xl:space-y-5">
         <p>Green Town, Lahore, Pakistan.</p>
         <div>
-          <h1 className="font-bold text-md sm:text-xl xl:text-2xl">
+          <h1 className="font-bold text-md sm:text-xl 2xl:text-2xl">
             +923214131187
           </h1>
-          <h1 className="font-bold text-md sm:text-xl xl:text-2xl">
+          <h1 className="font-bold text-md sm:text-xl 2xl:text-2xl">
             mabdullahr5131@gmail.com
           </h1>
         </div>
       </div>
 
-      <div className="flex flex-row justify-between w-1/3">
+      <div className="flex flex-row justify-between w-2/5">
         <a
-          className="w-3/12 font-bold text-xs sm:text-md xl:text-lg"
+          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg"
           href="https://instagram.com/abdullah.5131_?igshid=ZDdkNTZiNTM="
           target="blank"
         >
           <img className="object-contain" src={Instagram} alt="" />
         </a>
         <a
-          className="w-3/12 font-bold text-xs sm:text-md xl:text-lg"
+          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg"
           href="https://twitter.com/mabdullah_5131?t=-hcWoZv201l1ypsWaThG0w&s=09"
           target="blank"
         >
           <img className="" src={Twitter} alt="" />
         </a>
         <a
-          className="w-3/12 font-bold text-xs sm:text-md xl:text-lg"
+          className="w-3/12 font-bold text-xs sm:text-md 2xl:text-lg"
           href="https://www.linkedin.com/in/muhammad-abdullah-4489a2202"
           target="blank"
         >
