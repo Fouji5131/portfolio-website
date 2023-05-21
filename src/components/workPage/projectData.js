@@ -1,5 +1,5 @@
 import ProjectImage from "../../images/projectImg.png";
-import TodoList from "../../images/Daily ToDo List1.PNG";
+import TodoList from "../../images/Daily ToDo List.PNG";
 
 const ProjectsData = [
   {
