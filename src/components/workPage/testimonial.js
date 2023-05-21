@@ -54,7 +54,7 @@ const Testimonial = () => {
         </div>
 
         <div className="flex flex-col justify-center xl:w-3/5 space-y-10 mb-10">
-          <h1 className="font-boldItalic text-xl sm:text-2xl 2xl:text-3xl">
+          <h1 className="font-boldItalic text-xl sm:text-2xl 2xl:text-3xl ">
             {WorksData[testimonialImg].testimonial}
           </h1>
 

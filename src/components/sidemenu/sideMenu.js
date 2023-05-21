@@ -30,7 +30,9 @@ const SideMenu = () => {
 
       <div className="font-light text-sm">
         <SocialImgs />
-        <p className="mt-4">Copyright ©2023 Jacob Jones. All right reserved.</p>
+        <p className="mt-4 ">
+          Copyright ©2023 Muhammad Abdullah. All right reserved.
+        </p>
       </div>
       {/* <Toolbar /> */}
       {/* <List>

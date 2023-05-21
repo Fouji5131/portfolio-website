@@ -16,20 +16,20 @@ const SpecialtyItem = (props) => {
   };
 
   return (
-    <div className="space-y-10 ">
+    <div className="space-y-10">
       {props.servicesData.map((services) => (
-        <div className="space-y-5 px-10 py-5 rounded-3xl shadow-lg  ">
+        <div className="space-y-5 px-10">
           <div className="flex flex-row">
             <div className="flex flex-row w-full items-center font-regular">
-              <div className="flex flex-col xl:flex-row xl:w-11/12">
-                <div className="xl:w-1/2 font-bold text-1xl sm:text-2xl 2xl:text-3xl">
+              <div className="flex flex-col xl:flex-row xl:w-full">
+                <div className="xl:w-1/3 font-bold text-1xl sm:text-2xl 2xl:text-3xl">
                   <ul style={{ listStyleType: "disc" }}>
                     <li>{services.title}</li>
                   </ul>
                 </div>
 
-                <div className="xl:w-1/2 pr-5 space-y-5">
-                  <p>{services.description}</p>
+                <div className="xl:w-2/3 pr-5 space-y-5">
+                  <p className="text-justify">{services.description}</p>
                   {openImg && (
                     <img
                       className="rounded-3xl shadow-2xl"
@@ -41,7 +41,7 @@ const SpecialtyItem = (props) => {
               </div>
             </div>
 
-            <div className="w-16">
+            {/* <div className="w-16">
               <button
                 className="w-full flex align-top justify-center text-center  bg-darkGray text-white rounded-3xl shadow-2xl zoomUp"
                 onClick={openImgHandler}
@@ -50,7 +50,7 @@ const SpecialtyItem = (props) => {
                   {addImg}
                 </h1>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* <hr className="w-full flex justify-center border" /> */}

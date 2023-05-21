@@ -9,7 +9,7 @@ const Info = () => {
           MY NAME IS <span className="font-bold">MUHAMMAD ABDULLAH...</span>
         </h1>
         <p className="font-boldItalic text-lg sm:text-3xl xl:text-3xl 2xl:text-4xl  text-darkGray">
-          <span className="font-regular">Software </span>
+          <span className="font-regular">Web </span>
           Developer
         </p>
         <div className="xl:w-2/4 2xl:w-1/3 w-1/2 py-3  bg-darkGray text-white text-center font-regular rounded-3xl shadow-2xl zoomUp">

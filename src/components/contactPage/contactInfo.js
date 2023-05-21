@@ -7,7 +7,7 @@ const ContactInfo = () => {
   return (
     <div className="w-full space-y-8 2xl:space-y-16">
       <div className="space-y-5 2xl:space-y-5">
-        <p>Green Town, Lahore, Pakistan.</p>
+        <p>Lahore, Pakistan.</p>
         <div>
           <h1 className="font-bold text-md sm:text-xl 2xl:text-2xl">
             +923214131187

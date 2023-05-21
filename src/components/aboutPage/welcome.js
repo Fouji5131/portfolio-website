@@ -6,15 +6,11 @@ const Welcome = () => {
   return (
     <div className="flex flex-col space-y-9 ">
       <div>
-        <p className="font-boldItalic text-sm sm:text-md 2xl:text-lg">
-          Nice to meet you!
-        </p>
-        <h1 className="font-bold text-2xl sm:text-4xl 2xl:text-5xl">
-          WELCOME TOO...
-        </h1>
+        <p className="font-boldItalic text-sm sm:text-md 2xl:text-lg">About</p>
+        <h1 className="font-bold text-2xl sm:text-4xl 2xl:text-5xl">WELCOME</h1>
       </div>
 
-      <div className="flex flex-col items-center xl:space-y-1 2xl:space-y-5">
+      {/* <div className="flex flex-col items-center xl:space-y-1 2xl:space-y-5">
         <img className="xl:w-1/2 mb-5 zoomUp" src={WelcomeDp} alt="" />
         <h1 className="font-bold text-2xl sm:text-4xl xl:text-4xl 2xl:text-5xl gradient from-purpleGrad via-redGrad to-yellowGrad">
           MUHAMMAD ABDULLAH
@@ -27,7 +23,7 @@ const Welcome = () => {
             Download CV
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

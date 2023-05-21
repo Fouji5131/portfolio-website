@@ -8,6 +8,11 @@ const About = () => {
   return (
     <div className="flex flex-col items-center pt-52  sm:pt-32 xl:pt-0 xl:pb-10">
       <WelcomeAndDetail />
+      {/* <div className="flex justify-center mt-10">
+        <div className="w-4/5 ">
+        <Experience />
+        </div>
+      </div> */}
       <Experience />
     </div>
   );
