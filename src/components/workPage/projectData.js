@@ -1,18 +1,19 @@
-import ProjectImage from "../../images/projectImg.png";
-import TodoList from "../../images/DailyToDoList.png";
+// import ProjectImage from "../../images/projectImg.png";
+import TodoListAppPic from "../../images/DailyToDoList.png";
+import WeatherAppPic from "../../images/WeatherApp.png";
 
 const ProjectsData = [
   {
     title: "Practice Project",
     projectName: "Daily To-Do List",
-    image: TodoList,
+    image: TodoListAppPic,
     projectUrl: "https://daily-to-do-list.vercel.app/",
   },
   {
-    title: "UX study",
+    title: "Practice Project",
     projectName: "Website Research",
-    image: ProjectImage,
-    projectUrl: "https://www.google.com/",
+    image: WeatherAppPic,
+    projectUrl: "https://weather-website-bice-one.vercel.app/",
   },
   // {
   //   title: "Graphic Design",

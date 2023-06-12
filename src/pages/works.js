@@ -1,8 +1,7 @@
 import React from "react";
 import WorkTitle from "../components/workPage/workTitle";
-import WelcomeAndDetail from "../components/aboutPage/welcomeAndDetail";
 import ProjectsList from "../components/workPage/projectsList";
-import Testimonial from "../components/workPage/testimonial";
+// import Testimonial from "../components/workPage/testimonial";
 
 const Works = () => {
   return (
@@ -11,7 +10,7 @@ const Works = () => {
 
       <div className="flex flex-col items-center ">
         <div className="flex justify-center my-10 mb-20">
-          <div className="w-4/5  ">
+          <div className="xl:w-4/5">
             <ProjectsList />
           </div>
         </div>
@@ -22,9 +21,9 @@ const Works = () => {
           </div>
         </div> */}
 
-        <div className="flex items-center justify-center xl:w-3/4 mb-10">
+        {/* <div className="flex items-center justify-center xl:w-3/4 mb-10">
           <Testimonial />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import ServicesData from "./servicesData";
 
 const Specialties = () => {
   return (
-    <div className="space-y-10">
+    <div className="">
       <SpecialtyItem servicesData={ServicesData} />
     </div>
   );

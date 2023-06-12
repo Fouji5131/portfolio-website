@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectImg from "../../images/projectImg.png";
-import ArrowBlack from "../../images/arrowBlack.png";
+// import ProjectImg from "../../images/projectImg.png";
+// import ArrowBlack from "../../images/arrowBlack.png";
 
 const ProjectItem = (props) => {
   // function newTab() {
@@ -23,7 +23,7 @@ const ProjectItem = (props) => {
             </h1>
             {/* <img src={ArrowBlack} alt="" /> */}
           </div>
-          <div className="flex justify-center object-contain xl:w-1/2 ">
+          <div className="flex justify-center object-fill xl:w-1/2">
             <a href={projects.projectUrl} target="blank">
               <img
                 className="rounded-3xl shadow-2xl"

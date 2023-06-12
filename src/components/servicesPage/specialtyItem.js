@@ -1,24 +1,24 @@
 import React from "react";
 import { useState } from "react";
-import SpecialtyImg from "../../images/specialtyImg.png";
+// import SpecialtyImg from "../../images/specialtyImg.png";
 
 const SpecialtyItem = (props) => {
   const [openImg, setOpenImg] = useState(false);
-  const [addImg, setAddImg] = useState("+");
+  // const [addImg, setAddImg] = useState("+");
 
-  const openImgHandler = (event) => {
-    setOpenImg((current) => !current);
-    addImg = openImg ? setAddImg("+") : setAddImg("-");
-    if ((openImg = false)) {
-      setAddImg("+");
-    }
-    setAddImg("-");
-  };
+  // const openImgHandler = (event) => {
+  //   setOpenImg((current) => !current);
+  //   addImg = openImg ? setAddImg("+") : setAddImg("-");
+  //   if ((openImg = false)) {
+  //     setAddImg("+");
+  //   }
+  //   setAddImg("-");
+  // };
 
   return (
     <div className="space-y-10">
       {props.servicesData.map((services) => (
-        <div className="space-y-5 px-10">
+        <div className="">
           <div className="flex flex-row">
             <div className="flex flex-row w-full items-center font-regular">
               <div className="flex flex-col xl:flex-row xl:w-full">
